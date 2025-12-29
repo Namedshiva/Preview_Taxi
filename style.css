@@ -313,12 +313,13 @@ h2 {
     padding: 1.5rem;
     border-radius: 8px;
     transition: var(--transition);
+    border-color:primary-blue;
 }
-
+/* 
 .route-card:hover {
     box-shadow: var(--shadow);
     border-color: var(--primary-blue);
-}
+} */
 
 .route-card h4 {
     color: var(--primary-blue);
