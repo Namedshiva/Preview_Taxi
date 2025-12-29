@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth. - Safe & Reliable Taxi Services </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/images/Logo.PNG" alt="City Cab Co. Logo">
+           Prasanth Tours 
+        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#tariff">Tariff</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-images">
+            <img src="assets/images/Homepage_pic.png" alt="Traveler Van" class="hero-img van-img">
+            <img src="assets/images/Homepage_van.png" alt="Taxi Sedan" class="hero-img taxi-img">
+        </div>
+        <div class="hero-content">
+            <h1>Your Journey, Our Priority</h1>
+            <p>Experience the most comfortable, safe, and on-time taxi service in the city. Whether city rides or
+                outstation tours, we have the perfect vehicle for you.</p>
+            <button class="btn-primary" onclick="openBookingModal()">Book Now</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Safe, On-Time, Cost Efficient</h2>
+            <p>At Prasanth tours and services, we prioritize your safety and schedule above all else. Our fleet is well-maintained, and
+                our drivers are professional, ensuring a smooth ride every time. We offer competitive pricing without
+                compromising on quality or comfort.</p>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> 24/7 Customer Support</li>
+                <li><i class="fas fa-check-circle"></i> GPS Tracked Vehicles</li>
+                <li><i class="fas fa-check-circle"></i> Verified Drivers</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/about_image.png" alt="Safe Travel">
+        </div>
+    </section>
+
+    <!-- Familiar Destinations -->
+    <section id="destinations" class="destinations">
+        <h2>Familiar Destinations</h2>
+        <div class="destination-grid">
+            <div class="dest-item">Madurai Meenakshi Temple</div>
+            <div class="dest-item">Rameswaram</div>
+            <div class="dest-item">Kodaikanal</div>
+            <div class="dest-item">Courtallam</div>
+            <div class="dest-item">Munnar</div>
+            <div class="dest-item">Thiruchendur</div>
+            <div class="dest-item">Kanyakumari</div>
+            <div class="dest-item">Ooty</div>
+             <div class="dest-item">Thekkady</div>
+            <div class="dest-item">Thanjavur</div>
+            <div class="dest-item">Palani</div>
+            <div class="dest-item">Coimbatore </div>
+          
+        </div>
+    </section>
+
+    <!-- Tariff Section -->
+    <section id="tariff" class="tariff">
+        <h2>Our Tariff</h2>
+        <div class="tariff-cards">
+            <!-- Sedan -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/tariff_sedan.png" alt="Sedan">
+                </div>
+                <h3>Comfort Sedan</h3>
+                <p class="car-type">Etios / Dzire</p>
+                <p class="price">Rs. 10/km</p>
+                <div class="card-actions">
+                    <button class="btn-book" onclick="openBookingModal('Sedan')">Book Now</button>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20booking%20a%20Sedan"
+                        target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- SUV -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/tariff_suv.png" alt="SUV">
+                </div>
+                <h3>Luxury SUV</h3>
+                <p class="car-type">Innova / Crysta</p>
+                <p class="price">Rs. 15/km</p>
+                <div class="card-actions">
+                    <button class="btn-book" onclick="openBookingModal('SUV')">Book Now</button>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20booking%20an%20SUV"
+                        target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- Van -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/tariff_van.png" alt="Van">
+                </div>
+                <h3>Tempo Traveller</h3>
+                <p class="car-type">12 Seater / 18 Seater</p>
+                <p class="price">Rs. 20/km</p>
+                <div class="card-actions">
+                    <button class="btn-book" onclick="openBookingModal('Tempo Traveller')">Book Now</button>
+                    <a href="https://wa.me/919876543210?text=I%20am%20interested%20in%20booking%20a%20Tempo%20Traveller"
+                        target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <h2>Special Packages</h2>
+
+        <div class="package-main">
+            <h3>Explore Madurai - 2 Day</h3>
+            <ul>
+                <li>Meenakshi Amman Temple</li>
+                <li>Thirumalai Nayakkar Mahal</li>
+                <li>Gandhi Memorial Museum</li>
+                <li>Alagar Koyil</li>
+                <li>Vandiyur Mariamman Teppakulam</li>
+            </ul>
+        </div>
+
+        <div class="routes-grid">
+            <div class="route-card">
+                <h4>Madurai to Rameswaram</h4>
+                <p class="dist">Approx. 175 km</p>
+                <p class="time">3.5 Hours</p>
+                <p class="desc">Experience the sacred island, Pamban bridge, and Danushkodi. A spiritual journey with
+                    scenic coastal drives.</p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Munnar</h4>
+                <p class="dist">Approx. 155 km</p>
+                <p class="time">4.5 Hours</p>
+                <p class="desc">Escape to the tea gardens of Kerala. Enjoy cool climate, waterfalls, and breathtaking
+                    mountain views.</p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Coimbatore</h4>
+                <p class="dist">Approx. 210 km</p>
+                <p class="time">4 Hours</p>
+                <p class="desc">Visit the Manchester of South India. Known for its pleasant weather and proximity to
+                    Ooty.</p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Kodaikanal</h4>
+                <p class="dist">Approx. 120 km</p>
+                <p class="time">3 Hours</p>
+                <p class="desc">The Princess of Hill Stations. Enjoy the lake, Coaker's Walk, and misty mountains.</p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Kerala (Tour)</h4>
+                <p class="dist">Custom Package</p>
+                <p class="time">3-5 Days</p>
+                <p class="desc">A complete package covering Alleppey houseboats, Munnar, Thekkady, and Cochin.</p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Jadayu</h4>
+                <p class="dist">Approx. 240 km</p>
+                <p class="time">5 Hours</p>
+                <p class="desc">Visit the world's largest bird sculpture. A unique destination blending myth and nature.
+                </p>
+            </div>
+            <div class="route-card">
+                <h4>Madurai to Kanyakumari</h4>
+                <p class="dist">Approx. 245 km</p>
+                <p class="time">4 Hours</p>
+                <p class="desc">The southern tip of India. Witness the sunrise and sunset where three oceans meet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Simmakkal, Madurai - 625001</p>
+            </div>
+        </div>
+        <div class="services">
+            <h4>Our services</h4>
+            <ul>
+                <li>Pickup from Airports</li>
+                <li>Round trips</li>
+                <li>Corporate Services</li>
+                <li>Day Rentals/Hourly Rentals</li>
+            </ul>
+
+        </div>
+
+        <br>
+        
+        <footer>
+            <p>&copy; 2025 prasanth tours and services. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+    <!-- Floating Elements -->
+    <a href="#contact" class="sticky-contact">Contact Us</a>
+    <a href="https://wa.me/919876543210" target="_blank" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBookingModal()">&times;</span>
+            <h3>Book Your Ride</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>From</label>
+                    <input type="text" id="from" required>
+                </div>
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" id="to" required>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <input type="hidden" id="vehicleType" value="">
+                <button type="submit" class="btn-submit">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
