@@ -39,7 +39,7 @@ document.getElementById('bookingForm').addEventListener('submit', function (e) {
     const vehicle = document.getElementById('vehicleType').value;
 
     // Construct WhatsApp Message
-    const message = `Hello City Cab Co., I would like to book a ride.%0a%0a` +
+    const message = `Hello Gajera travels Co., I would like to book a ride.%0a%0a` +
         `*Name:* ${name}%0a` +
         `*Phone:* ${phone}%0a` +
         `*From:* ${from}%0a` +
