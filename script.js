@@ -47,7 +47,7 @@ document.getElementById('bookingForm').addEventListener('submit', function (e) {
         `*Date:* ${date}%0a` +
         `*Vehicle:* ${vehicle}`;
 
-    const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
+    const whatsappUrl = `https://wa.me/6380638261?text=${message}`;
 
     // Show Alert
     alert(`Thank you, ${name}! Redirecting to WhatsApp to confirm your booking.`);
